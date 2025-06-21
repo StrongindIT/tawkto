@@ -3,7 +3,7 @@ info:
   version: 1.0.0
   title: Google Sheet Query API phase1
   description: >
-    This API retrieves product descriptions based on code
+    This API retrieves product descriptions based on serial
   license:
     name: MIT
 servers:
@@ -11,7 +11,7 @@ servers:
 paths:
   /exec:
     post:
-      summary: Retrieve product details based on product code
+      summary: Retrieve product details based on product serial
       operationId: findProductsByCode
       parameters:
       - in: query
@@ -20,7 +20,7 @@ paths:
           type: string
           minLength : 3
         required: true
-        description: Code to look up products. Performs a partial match. Minimum of 3 characters
+        description: Serial to look up products. Performs a partial match. Minimum of 3 characters
       responses:
         '200':
           description: Found products
@@ -31,7 +31,7 @@ paths:
                 properties :
                   total:
                     type: number
-                    description : Total number of that match the provided code
+                    description : Total number of that match the provided serial
                   entries:
                     type: array
                     items:
