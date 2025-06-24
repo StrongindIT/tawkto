@@ -20,7 +20,7 @@ paths:
           type: string
           minLength : 3
         required: true
-        description: Serial to look up products. Performs full match.
+        description: Serial to look up products. Performs partial match.
       responses:
         '200':
           description: Found products
