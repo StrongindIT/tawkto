@@ -10,7 +10,7 @@ servers:
   - url: https://script.google.com/macros/s/AKfycbzE51wwks7-weeqHOwH1pgJC7C0Dk7B7FE3XF3-0Vxf4xMxl7lPDYQx0QwodXgfoEh6
 paths:
   /exec:
-    post:
+    get:
       summary: Retrieve product details based on product serial
       operationId: findProductsByCode
       parameters:
