@@ -7,7 +7,7 @@ info:
   license:
     name: MIT
 servers:
-  - url: https://script.google.com/macros/s/AKfycbwgThj4ieGq0WnnTY1lVmQVy31kR1ADIiHp-5X1_tKRBcY17bXZfoTNfQmQMX06ie3o
+  - url: https://script.google.com/macros/s/AKfycbwEEArIN76kWZ_37Ev94Ikjzx-EO3_wHCyKPloUWB89p0yD7ZZjEHU81IMGy_MIjZG5
 paths:
   /exec:
     post:
@@ -49,6 +49,9 @@ paths:
                         description:
                           type: string
                           example: "Replacement Filter Cartridge"
+                        url:
+                          type: string
+                          example: "https://shop.strongspas.com/shop/parts/filters/50-square-foot-filter/"
         '400':
           description: Missing parameters
           content:
