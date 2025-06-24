@@ -51,7 +51,7 @@ paths:
                           example: "Replacement Filter Cartridge"
                         url:
                           type: string
-                          example: "https://shop.strongspas.com/shop/parts/filters..."
+                          example: "https://shop.strongspas.com/shop/parts/filters"
         '400':
           description: Missing parameters
           content:
